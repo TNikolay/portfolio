@@ -61,6 +61,14 @@ export const projects: IProjectData[] = [
     demo: '',
     src: '',
   },
+  {
+    name: 'Neoflex Invite Test',
+    description: 'Just a test task',
+    image: 'neoflex-invite-test.webp',
+    stack: ['React', 'React Router', 'Zustand', 'Tailwind', 'Shadcn/ui'],
+    demo: 'https://tnikolay.github.io/Neoflex-Invite-Test/',
+    src: 'https://github.com/TNikolay/Neoflex-Invite-Test',
+  },
   // {
   //   name: '',
   //   description: '',

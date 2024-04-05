@@ -6,7 +6,7 @@ import Layout from '../layouts/Layout.astro'
 import { fadeIn } from '../utils/animation'
 ---
 
-<Layout title='Nikolay Tiushkov - Frontend developer from Sevastopol, CV'>
+<Layout title='Nikolay Tiushkov - Frontend developer from Sevastopol, portfolio'>
   <main class='mx-auto mb-16 max-w-6xl text-base text-gray-900 lg:text-xl'>
     <motion.h1 client:load variants={fadeIn(0, -50, 0)} initial='hidden' whileInView={'show'}>Nikolay Tiushkov</motion.h1>
     <motion.h2 client:load variants={fadeIn(-150, 0, 0)} initial='hidden' whileInView={'show'}>Frontend developer from Sevastopol</motion.h2>
@@ -19,11 +19,12 @@ import { fadeIn } from '../utils/animation'
       I have a few certificates:
       <a href='https://app.rs.school/certificate/bhx9izkn' target='_blank'>Frontend</a>,
       <a href='https://app.rs.school/certificate/vxv52eoa' target='_blank'>React</a>,
-      <a href=`${import.meta.env.BASE_URL}/assets/algorithms.pdf` target='_blank'>Algorithms</a>
+      <a href=`${import.meta.env.BASE_URL}/assets/algorithms.pdf` target='_blank'>Algorithms</a>, 
+      <a href=`${import.meta.env.BASE_URL}/assets/efset.org.webp` target='_blank'>English - B1/B2</a>
     </motion.p>
 
     <h2>Links</h2>
-    <div class='flex flex-col gap-4 justify-around p-4 m-auto my-4 bg-white rounded-md border-gray-200 shadow-md md:flex-row md:mx-4 md:p-8 hover:shadow-lg'>
+    <div class='flex flex-col gap-4 justify-around p-4 m-auto my-4 bg-white rounded-xl border-gray-200 shadow-md md:flex-row md:mx-4 md:p-8 hover:shadow-lg'>
       <ul class='space-y-0.5'>
         <motion.li client:load variants={fadeIn(0, 50, 0.4, 0.5)} initial='hidden' whileInView={'show'}><strong>Work</strong>: <a href='http://softvoile.com/' target='_blank'>softvoile.com</a></motion.li>
         <motion.li client:load variants={fadeIn(0, 50, 0.6, 0.5)} initial='hidden' whileInView={'show'}><strong>Private</strong>: <a href='http://begemotov.net/' target='_blank'>begemotov.net</a></motion.li>
