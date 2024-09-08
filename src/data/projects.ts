@@ -65,10 +65,32 @@ export const projects: IProjectData[] = [
     name: 'Neoflex Invite Test',
     description: 'Just a test task',
     image: 'neoflex-invite-test.webp',
-    stack: ['React', 'React Router', 'Zustand', 'Tailwind', 'Shadcn/ui'],
+    stack: ['React', 'React Router', 'Zustand', 'Tailwind', 'Shadcn'],
     demo: 'https://tnikolay.github.io/Neoflex-Invite-Test/',
     src: 'https://github.com/TNikolay/Neoflex-Invite-Test',
   },
+  {
+    name: 'Softvoile.com',
+    description: 'Main site of my company softvoile.com',
+    image: 'softvoile.webp',
+    stack: ['Next', 'TS', 'Tailwind', 'Shadcn', 'Framer Motion', 'VPS', 'Docker'],  
+    demo: 'http://softvoile.com/',
+  },
+  {
+    name: 'Clipdiary.com',
+    description: 'Site for my product - Clipdiary clipboard manager',
+    image: 'clipdiary.webp',
+    stack: ['Next', 'TS', 'Tailwind', 'Shadcn', 'Framer Motion', 'VPS', 'Docker'],  
+    demo: 'http://clipdiary.com/',
+  },
+  {
+    name: 'Flashpaste.com',
+    description: 'Site for my other product - Flashpaste',
+    image: 'flashpaste.webp',
+    stack: ['Next', 'TS', 'Tailwind', 'Shadcn', 'Framer Motion', 'VPS', 'Docker'],  
+    demo: 'http://flashpaste.com/',
+  },
+
   // {
   //   name: '',
   //   description: '',
