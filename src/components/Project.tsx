@@ -1,4 +1,5 @@
 import { motion } from 'framer-motion'
+import { Badge } from "@/components/ui/badge"
 
 export interface IProjectData {
   name: string
@@ -34,7 +35,12 @@ export function Project({ data }: IProps) {
             )}
           </p>
         )}
-        {stack && <p className='mt-6 text-sm italic font-bold'>{stack.join(', ')}</p>}
+
+        {stack &&
+          <div className='my-6 flex flex-wrap gap-4'>
+            {stack.map((item) => <Badge key={item} variant='secondary' className='py-1 px-4 text-base text-primary italic font-light'> {item} </Badge>)}
+          </div>
+        }
       </div>
 
       {image && (
