@@ -34,7 +34,7 @@ export function ProjectList({ projects }: IProps) {
     <>
       <h2>Projects</h2>
       {/* Show all button */}
-      <div className='px-4 my-12 flex flex-wrap gap-4'>
+      <div className='px-4 mb-12 flex flex-wrap gap-4'>
         <Badge variant='secondary'
           className={'py-1 px-4 shadow text-base italic font-light cursor-pointer ' + (curStack.size === 0
             ? 'bg-primary text-primary-foreground hover:bg-primary/60'
@@ -67,7 +67,7 @@ export function ProjectList({ projects }: IProps) {
       </div>
 
       {/* Project list */}
-      {filteredProjects.map((project) => <Project data={project} key={project.name} />)}
+      {filteredProjects.map((project, index) => <Project data={project} index={index} key={project.name} />)}
     </>
   )
 }

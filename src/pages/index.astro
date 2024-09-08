@@ -1,7 +1,6 @@
 ---
 import '@/styles/globals.css'
 import { motion } from 'framer-motion'
-import { Project } from '../components/Project'
 import { projects } from '../data/projects'
 import Layout from '../layouts/Layout.astro'
 import { fadeIn } from '../utils/animation'
@@ -10,39 +9,39 @@ import { ProjectList } from '@/components/ProjectList'
 
 <Layout title='Nikolay Tiushkov - Frontend developer from Sevastopol, portfolio'>
   <main class='mx-auto mb-16 max-w-6xl text-base text-gray-900 lg:text-xl'>
-    <motion.h1 client:load variants={fadeIn(0, -50, 0)} initial='hidden' whileInView={'show'}>Nikolay Tiushkov</motion.h1>
-    <motion.h2 client:load variants={fadeIn(-150, 0, 0)} initial='hidden' whileInView={'show'}>Frontend developer from Sevastopol</motion.h2>
+    <motion.h1 client:load variants={fadeIn(0, -30, 0)} initial='hidden' whileInView={'show'} viewport={{ once: true }} className='text-primary'>Nikolay Tiushkov</motion.h1>
+    <motion.h2 client:load variants={fadeIn(-100, 0, 0, 2)} initial='hidden' whileInView={'show'} viewport={{ once: true }}>Frontend developer from Sevastopol</motion.h2>
 
-    <motion.p className='mb-8' client:load variants={fadeIn(0, 0, 0.5, 0.5)} initial='hidden' whileInView={'show'}>
-      I commenced my web development studies at <a href='https://rs.school/' target='_blank'>RS School</a> in December 2022. I successfully completed the JS/FRONT-END courses (stages 0/1/2), mastered the REACT and NODE.JS courses.
+    <motion.p client:load variants={fadeIn(0, 30, 1, 2)} initial='hidden' whileInView={'show'} viewport={{ once: true }}>
+      I began my web development studies at <a href='https://rs.school/' target='_blank'>RS School</a> in December 2022. I completed the JS/Front-End, React, and Node.js courses.
     </motion.p>
 
-    <motion.p className='mb-8' client:load variants={fadeIn(0, 0, 0.5, 0.5)} initial='hidden' whileInView={'show'}>
-      I have a few certificates:
-      <a href='https://app.rs.school/certificate/bhx9izkn' target='_blank'>Frontend</a>,
+    <motion.p className='mt-8' client:load variants={fadeIn(0, 30, 1, 2)} initial='hidden' whileInView={'show'} viewport={{ once: true }}>
+      I hold certifications in
+      <a href='https://app.rs.school/certificate/bhx9izkn' target='_blank'>Frontend Development</a>,
       <a href='https://app.rs.school/certificate/vxv52eoa' target='_blank'>React</a>,
       <a href='https://app.rs.school/certificate/unfpkj4l' target='_blank'>Node.js</a>,
       <a href=`${import.meta.env.BASE_URL}/assets/algorithms.pdf` target='_blank'>Algorithms</a>,
       <a href=`${import.meta.env.BASE_URL}/assets/docker.jfif` target='_blank'>Docker</a>,
       <a href=`${import.meta.env.BASE_URL}/assets/AWS Fundamental.pdf` target='_blank'>AWS Fundamental</a>,
-      <a href=`${import.meta.env.BASE_URL}/assets/efset.org.webp` target='_blank'>English - B1/B2</a>
+      <a href=`${import.meta.env.BASE_URL}/assets/efset.org.webp` target='_blank'>English proficiency (B1/B2)</a>.
     </motion.p>
 
     <h2>Links</h2>
-    <div class='flex flex-col gap-4 justify-around p-4 m-auto my-4 bg-white rounded-xl border-gray-200 shadow-md md:flex-row md:mx-4 md:p-8 hover:shadow-lg'>
-      <ul class='space-y-0.5'>
-        <motion.li client:load variants={fadeIn(0, 50, 0.4, 0.5)} initial='hidden' whileInView={'show'}><strong>Work</strong>: <a href='http://softvoile.com/' target='_blank'>softvoile.com</a></motion.li>
-        <motion.li client:load variants={fadeIn(0, 50, 0.6, 0.5)} initial='hidden' whileInView={'show'}><strong>Private</strong>: <a href='http://begemotov.net/' target='_blank'>begemotov.net</a></motion.li>
-        <motion.li client:load variants={fadeIn(0, 50, 0.8, 0.5)} initial='hidden' whileInView={'show'}><strong>Playground</strong>: <a href='https://leetcode.com/TNikolay/' target='_blank'>leetcode.com</a></motion.li>
+    <div class='flex flex-col justify-around p-8 gap-4 m-auto bg-white rounded-xl border-gray-200 shadow-md md:flex-row md:mx-4 md:p-8 hover:shadow-lg'>
+      <ul>
+        <motion.li client:load variants={fadeIn(0, 50, 2.5, 1.5)} initial='hidden' whileInView={'show'} viewport={{ once: true }} className='mb-2'><strong>Work</strong>: <a href='http://softvoile.com/' target='_blank'>softvoile.com</a></motion.li>
+        <motion.li client:load variants={fadeIn(0, 50, 3.0, 1.5)} initial='hidden' whileInView={'show'} viewport={{ once: true }} className='mb-2'><strong>Private</strong>: <a href='http://begemotov.net/' target='_blank'>begemotov.net</a></motion.li>
+        <motion.li client:load variants={fadeIn(0, 50, 3.5, 1.5)} initial='hidden' whileInView={'show'} viewport={{ once: true }} className='mb-2'><strong>Playground</strong>: <a href='https://leetcode.com/TNikolay/' target='_blank'>leetcode.com</a></motion.li>
       </ul>
-      <ul class='space-y-0.5'>
-        <motion.li client:load variants={fadeIn(0, 50, 1.0, 0.5)} initial='hidden' whileInView={'show'}><strong>Telegram</strong>: <a href='https://t.me/TNikolay80' target='_blank'>TNikolay80</a></motion.li>
-        <motion.li client:load variants={fadeIn(0, 50, 1.2, 0.5)} initial='hidden' whileInView={'show'}><strong>Github</strong>: <a href='https://github.com/TNikolay' target='_blank'>TNikolay</a></motion.li>
-        <motion.li client:load variants={fadeIn(0, 50, 1.4, 0.5)} initial='hidden' whileInView={'show'}><strong>Email</strong>: <a href='mailto:begemot@begemotov.net'>begemot@begemotov.net</a></motion.li>
+      <ul class='space-y-20'>
+        <motion.li client:load variants={fadeIn(0, 50, 4.0, 1.5)} initial='hidden' whileInView={'show'} viewport={{ once: true }} className='mb-2'><strong>Github</strong>: <a href='https://github.com/TNikolay' target='_blank'>TNikolay</a></motion.li>
+        <motion.li client:load variants={fadeIn(0, 50, 4.5, 1.5)} initial='hidden' whileInView={'show'} viewport={{ once: true }} className='mb-2'><strong>Telegram</strong>: <a href='https://t.me/TNikolay80' target='_blank'>TNikolay80</a></motion.li>
+        <motion.li client:load variants={fadeIn(0, 50, 5.0, 1.5)} initial='hidden' whileInView={'show'} viewport={{ once: true }} className='mb-2'><strong>Email</strong>: <a href='mailto:begemot@begemotov.net'>begemot@begemotov.net</a></motion.li>
       </ul>
     </div>
 
-    <ProjectList projects={projects} client:load/>  
+    <ProjectList projects={projects} client:load />
 
     <h2>In past life</h2>
     <p class='mb-8'>In 2004, I completed my studies in computer science at the Kharkov Aviation Institute. Since then, I've ventured into various endeavors, primarily focusing on the development of desktop applications as an ISV. My expertise includes C++, MFC, Qt, wxWidgets, and more. Explore some of my products at <a href='http://softvoile.com/' target='_blank'>softvoile.com</a></p>

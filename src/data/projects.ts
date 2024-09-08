@@ -57,7 +57,7 @@ export const projects: IProjectData[] = [
   {
     name: 'This portfolio',
     image: '',
-    stack: ['Astro', 'React', 'TS', 'Tailwind', 'Framer Motion'],
+    stack: ['Astro', 'React', 'TS', 'Tailwind', 'Shadcn', 'Framer Motion'],
     demo: '',
     src: 'https://github.com/TNikolay/portfolio',
   },
