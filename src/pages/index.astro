@@ -5,6 +5,7 @@ import { Project } from '../components/Project'
 import { projects } from '../data/projects'
 import Layout from '../layouts/Layout.astro'
 import { fadeIn } from '../utils/animation'
+import { ProjectList } from '@/components/ProjectList'
 ---
 
 <Layout title='Nikolay Tiushkov - Frontend developer from Sevastopol, portfolio'>
@@ -41,8 +42,7 @@ import { fadeIn } from '../utils/animation'
       </ul>
     </div>
 
-    <h2>Projects</h2>
-    {projects.map((project) => <Project client:load data={project} />)}
+    <ProjectList projects={projects} client:load/>  
 
     <h2>In past life</h2>
     <p class='mb-8'>In 2004, I completed my studies in computer science at the Kharkov Aviation Institute. Since then, I've ventured into various endeavors, primarily focusing on the development of desktop applications as an ISV. My expertise includes C++, MFC, Qt, wxWidgets, and more. Explore some of my products at <a href='http://softvoile.com/' target='_blank'>softvoile.com</a></p>
